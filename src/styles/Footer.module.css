@@ -1,0 +1,230 @@
+/* Footer.module.css */
+.footer {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    color: #ecf0f1;
+    padding: 3rem 0 1rem;
+    margin-top: 3rem;
+    border-top: 3px solid #3498db;
+}
+
+.footerContent {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.footerSection {
+    display: flex;
+    flex-direction: column;
+}
+
+.footerTitle {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(45deg, #3498db, #2ecc71);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 700;
+}
+
+.footerDescription {
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    color: #bdc3c7;
+}
+
+.socialLinks {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.socialLink {
+    color: #bdc3c7;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.socialLink:hover {
+    color: #3498db;
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-3px);
+}
+
+.footerSubtitle {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #ecf0f1;
+    font-weight: 600;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 0.5rem;
+    display: inline-block;
+}
+
+.footerLinks {
+    list-style: none;
+    padding: 0;
+}
+
+.footerLinks li {
+    margin-bottom: 0.7rem;
+}
+
+.footerLink {
+    color: #bdc3c7;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.footerLink:hover {
+    color: #3498db;
+    transform: translateX(5px);
+}
+
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contactItem {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    color: #bdc3c7;
+}
+
+.contactIcon {
+    color: #3498db;
+    flex-shrink: 0;
+}
+
+.newsletterText {
+    color: #bdc3c7;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.newsletterForm {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.newsletterInput {
+    padding: 0.8rem;
+    border: none;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #ecf0f1;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.newsletterInput:focus {
+    outline: none;
+    border-color: #3498db;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.newsletterInput::placeholder {
+    color: #95a5a6;
+}
+
+.newsletterButton {
+    padding: 0.8rem;
+    border: none;
+    border-radius: 4px;
+    background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.newsletterButton:hover {
+    background: linear-gradient(135deg, #2980b9 0%, #3498db 100%);
+    transform: translateY(-2px);
+}
+
+.footerBottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 3rem;
+    padding: 1.5rem 2rem;
+}
+
+.footerBottomContent {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.legalLinks {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.legalLink {
+    color: #bdc3c7;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.legalLink:hover {
+    color: #3498db;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .footerContent {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+        gap: 2rem;
+    }
+    
+    .footerBottomContent {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .legalLinks {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 2rem 0 1rem;
+    }
+    
+    .footerTitle {
+        font-size: 1.3rem;
+    }
+    
+    .footerSubtitle {
+        font-size: 1.1rem;
+    }
+    
+    .socialLinks {
+        justify-content: center;
+    }
+    
+    .newsletterForm {
+        flex-direction: column;
+    }
+}
