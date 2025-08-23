@@ -20,7 +20,7 @@ const Home = () => {
               Welcome to <span className={styles.highlight}>BoThabi EduCare</span>
             </h1>
             <p className={styles.subtitle}>
-              Empowering communities with Computer Fundamentals & Java coding skills. 
+              Empowering people with Computer Fundamentals & Java coding skills. 
               Join us to build a brighter future through technology education.
             </p>
             <div className={styles.cta}>
